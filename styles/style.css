@@ -135,29 +135,6 @@ a:hover{
     gap: 0.9375rem;
 }
     
-.perfil a {
-    display: grid;
-    justify-content: center;
-    cursor: pointer;
-    padding: 0.625rem 0.9375rem;
-    background-color: #701D28;  
-    border-radius: 0.5rem; 
-    box-shadow: 0.625rem 0.625rem 1.25rem 0rem rgba(0, 0, 0, 0.5);
-}
-    
-.perfil a:hover {
-    background-color: #4b161d;
-    color: #f4f4f5a9;
-}
-    
-.detalhe2 {
-    display: block;
-    width: 1.3889vh;
-    height: 0.3704vh;
-    background-color: #701D28;   
-}
-
-
 .experiencia {
     margin-top: 18.5185vh;
     display: grid;
@@ -352,6 +329,8 @@ footer p{
 
 
 @media (max-width: 1440px) {
+
+   
     .exptext{
         font-size: 110px;
     }
@@ -395,6 +374,11 @@ footer p{
       opacity: 0;
     }
 
+    .perfil img{
+        margin: 2rem 0;
+    }
+
+
 
     .nav-list li {
       margin-left: 0;
@@ -409,7 +393,7 @@ footer p{
     }
 
     .perfil img{
-        height: 100vw;
+        height: 70vw;
     }
     .quemsou{
         display: grid;
