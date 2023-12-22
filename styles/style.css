@@ -188,7 +188,7 @@ a:hover{
     align-items: center;
     justify-content: center;
     gap: 7vh;
-    background-color: #244b02;
+    background-color: #426B1F;
     padding: 3vw 5vw;
     border-radius: 0.3vw;
     box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
@@ -391,12 +391,15 @@ footer p{
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
-      transform: translateX(100%);
-      transition: transform 0.3s ease-in;
+      transition: 1s;
+      opacity: 0;
     }
+
+
     .nav-list li {
       margin-left: 0;
       opacity: 0;
+      cursor: pointer;
     }
     .grid-images-div p{
         font-size: 1rem;
@@ -451,14 +454,17 @@ footer p{
         gap: 2vw;
         margin-top: 10vw;
         margin-bottom: 20vw;
+        margin-left: 0;
     }
 
     .experiencia-container{
         grid-template-columns: 70vw;
         margin: 0px;
     }
-    .trampo{
-        margin-right: 0vh;
+  
+    .grid-exp-bloco1{
+        gap: 4vh;
+        width: 70vw;
     }
 
     
@@ -538,8 +544,7 @@ footer p{
         height: 30vw;
         width: auto;
         align-items: center;
-        background-color: #426B1F;
-        opacity: 0.7;
+        background-color: #71b436;
         align-content: center;
         gap: 10px;
     }
@@ -578,12 +583,13 @@ footer p{
   
   .nav-list.active {
     transform: translateX(0);
+    opacity: 1;
   }
   
   @keyframes navLinkFade {
     from {
       opacity: 0;
-      transform: translateX(50px);
+      transform: translateX(0);
     }
     to {
       opacity: 1;
@@ -592,14 +598,6 @@ footer p{
 
   }
   
-  .mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
-  }
+
   
-  .mobile-menu.active .line2 {
-    opacity: 0;
-  }
   
-  .mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
-  }
