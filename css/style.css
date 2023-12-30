@@ -133,6 +133,16 @@ a:hover{
 .perfil {
     display: grid;
     gap: 0.9375rem;
+    justify-items: center;
+}
+
+.perfil a {
+    justify-content: center;
+    background-color: #71b436;
+    width: 10rem;
+    height: 2.3rem;
+    border-radius: 0.2rem;
+    align-items: center;
 }
     
 .experiencia {
@@ -196,9 +206,10 @@ a:hover{
 
 .grid-images{
     display: flex;
+    justify-content: center;
     text-align: center;
     padding: 2vw;
-    gap: 2vh;
+    gap: 10vh;
     margin-bottom: 10vw;
 }
 
@@ -217,17 +228,17 @@ a:hover{
 
 .grid-images-div p{
     font-size: 1vw;
+    width: 40vh;
 }
 
 .grid-images-div img{
-    width: 20vw;
+    width: 15vw;
     border-radius: 0.3rem;
 }
 
 
 .contato{
     display: grid;
-    grid-template-columns: 1fr 39vw;
     justify-items: center;
     margin-bottom: 12.5rem;
 }
